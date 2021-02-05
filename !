@@ -10,11 +10,12 @@
   </head>
 
   <body>
-    <%= render 'home/header.html.erb' %>
+
+    <%= render 'header' %>
 
     <%= yield %>
 
-    <%= render 'home/rodape.html.erb' %>
+    <%= render 'rodape' %>
 
   </body>
 </html>
