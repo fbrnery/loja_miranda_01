@@ -1,11 +1,30 @@
-<div class="btn-group">
-  <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
-  <a href="#" class="btn btn-primary">Link</a>
-  <a href="#" class="btn btn-primary">Link</a>
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <div class='row'>
+      <div class="col-xs-4">
+        <a class="navbar-brand" href="#">
+          <%= image_tag 'logo-miranda-3.png' =%>
+        </a>
+      </div>
+    </div>
+    <div class="navbar-header navbar-right">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav nav-pills navbar-right">
+        <li role="presentation"><%= link_to "Home", welcome_index_path%></li>
+        <li role="presentation"><%= link_to "Nossa História", welcome_historia_path%></li>
+        <li role="presentation"><%= link_to "Nosso Acaí", welcome_acai_path%></li>
+        <li role="presentation"><%= link_to "Cardápio ", welcome_cardapio_path%></li>
+        <li role="presentation"><%= link_to "Contatos/Localização", welcome_contatos_path%></li>
+      </ul>
+    </ul>
+  </div><!--/.navbar-collapse -->
 </div>
+</nav>
 
-<div class="btn-group" role="group" aria-label="Basic mixed styles example">
-  <button type="button" class="btn btn-danger">Left</button>
-  <button type="button" class="btn btn-warning">Middle</button>
-  <button type="button" class="btn btn-success">Right</button>
-</div>
