@@ -1,0 +1,70 @@
+$navbar-height: 100px
+
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body
+  color: #2C3E50
+  background-color:	#FFFFFF !important
+  padding-top: 0px
+  padding-bottom: 50px
+
+  // X-Small devices (portrait phones, less than 576px)                                                      │~                             
+  @media {max-width: 575.98px}                                                                               │~                             
+  // Small devices (landscape phones, less than 768px)                                                       │~                             
+  @media {max-width: 767.98px}                                                                               │~                             
+   // Medium devices (tablets, less than 992px)                                                               │~                             
+  @media {max-width: 991.98px}                                                                               │~                             
+   // Large devices (desktops, less than 1200px)                                                              │~                             
+  @media {max-width: 1199.98px}                                                                              │~                             
+   // X-Large devices (large desktops, less than 1400px)                                                      │~                             
+  @media {max-width: 1399.98px}    
+
+//Header//
+.navbar
+  background-color: #531345
+.row
+ margin-top: -25px
+.col-sm-4 
+  height: 10px
+
+.nav-pills > li > a
+  text-transform: uppercase
+  font-size: 14px
+  font-family: "Roboto Condensed, sans-serif", Helvetica,sans-serif
+  color: #FFFFFF
+  font-weight: bold
+  position: static
+  display: inline-block
+  padding: 8px
+  padding-top: 8px
+  margin: 10px
+  transition: background-color 2s
+  border-radius: 1px
+
+  &:hover
+    color: #FFFFFF
+    background-color: #FF00FF
+    border-radius: 1px
+
+.navbar-toggle
+  position: relative
+  float: right
+  margin-right: 25px
+  padding: 9px 10px
+  margin-top: 20px
+  margin-bottom: 33px
+  background-color: transparent
+  background-image: none
+  border: 1px solid transparent
+  border-radius: 4px
+
+.navbar-brand > img
+  display: block
+  margin-top: -100px
+  margin-left: -10px
+  width: 88%
+
+//header//
+
